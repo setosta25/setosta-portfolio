@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Emmanuel Setosta, BSIT student and aspiring web developer in Roxas City, Capiz.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>Emmanuel Setosta | Web Developer Portfolio</title>
+</head>
+<body class="loading">
+
+    <!-- Loading screen -->
+    <div id="loader" role="status" aria-live="polite">
+        <div class="loader-box">
+            <div class="scene">
+                <div class="cube">
+                    <div class="face front">E</div>
+                    <div class="face back">S</div>
+                    <div class="face right"></></div>
+                    <div class="face left">{ }</div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                </div>
+                <div class="floor-shadow"></div>
+            </div>
+            <p class="loader-name">Emmanuel Setosta</p>
+            <p class="loader-text">Initializing Portfolio<span class="dots"></span></p>
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <p class="loader-percent">0%</p>
+        </div>
+    </div>
+
+    <!-- Ambient Background Glow -->
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header>
+        <nav>
+            <a class="brand" href="#top">ES<span>.</span></a>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="socials">
+                    <a href="https://github.com/setosta25" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-setosta-450161427/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/emmanuelsetosta25" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark or light theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="menu-btn icon-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="top">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-text">
+                <p class="status"><span class="pulse"></span> Open to web developer roles</p>
+                <h1>Hi, I'm <span class="gradient-text">Emmanuel</span>.<br>I build things for the web.</h1>
+                <p class="lead">I'm a 21-year-old BSIT student at Filamer Christian University in Roxas City, Capiz. I like solving problems, learning new tools, and turning ideas into working websites and apps.</p>
+                <div class="cta">
+                    <a class="btn primary" href="#projects"><i class="fa-solid fa-code"></i> View my projects</a>
+                    <a class="btn" href="#contact">Contact me</a>
+                </div>
+            </div>
+            <div class="hero-pic">
+                <div class="pic-ring">
+                    <img src="images/setosta.jfif" alt="Portrait of Emmanuel Setosta">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="reveal">
+            <div class="section-header">
+                <span class="eyebrow">01 / Profile</span>
+                <h2>About me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="card profile">
+                    <img src="images/Emmanuel Setosta.webp" alt="Emmanuel Setosta">
+                    <h3>Emmanuel Setosta</h3>
+                    <p class="badge">BSIT - 3C</p>
+                    <p class="meta-line"><i class="fa-solid fa-location-dot"></i> Lawa-an, Roxas City, Capiz</p>
+                    <p class="meta-line"><i class="fa-solid fa-envelope"></i> <a href="mailto:emmanuelsetosta25@gmail.com">emmanuelsetosta25@gmail.com</a></p>
+                </div>
+                <div class="card about-text">
+                    <p>I'm studying Information Technology and focusing on web development. I enjoy the full process: planning a system, writing the code, and fixing what breaks along the way.</p>
+                    <p>My goal is to become the first millionaire in my family. I want to support my mother and my brother, because without them I would be nothing.</p>
+                    <div class="facts">
+                        <div>
+                            <strong>University</strong>
+                            <span>Filamer Christian University</span>
+                        </div>
+                        <div>
+                            <strong>Focus</strong>
+                            <span>Full-Stack Web Development</span>
+                        </div>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Roxas City, Capiz, PH</span>
+                        </div>
+                        <div>
+                            <strong>Status</strong>
+                            <span>Seeking Web Dev Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="reveal">
+            <div class="section-header">
+                <span class="eyebrow">02 / Tech Stack</span>
+                <h2>Skills</h2>
+                <p class="section-note">Tools I use to build and manage projects.</p>
+            </div>
+            <div class="skill-groups">
+                <div class="card skill-group">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Front end</h3>
+                    <div class="chips">
+                        <div class="chip"><img src="images/html.webp" alt=""><span>HTML</span></div>
+                        <div class="chip"><img src="images/css.webp" alt=""><span>CSS</span></div>
+                        <div class="chip"><img src="images/javascript.webp" alt=""><span>JavaScript</span></div>
+                        <div class="chip"><img src="images/react.webp" alt=""><span>React.js</span></div>
+                    </div>
+                </div>
+                <div class="card skill-group">
+                    <h3><i class="fa-solid fa-server"></i> Back end and databases</h3>
+                    <div class="chips">
+                        <div class="chip"><img src="images/node.webp" alt=""><span>Node.js</span></div>
+                        <div class="chip"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                        <div class="chip"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+                        <div class="chip"><i class="fa-solid fa-database"></i><span>PostgreSQL</span></div>
+                    </div>
+                </div>
+                <div class="card skill-group">
+                    <h3><i class="fa-solid fa-wrench"></i> Tools</h3>
+                    <div class="chips">
+                        <div class="chip"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+                        <div class="chip"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+                        <div class="chip"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="reveal">
+            <div class="section-header">
+                <span class="eyebrow">03 / Featured Work</span>
+                <h2>Projects</h2>
+            </div>
+            <div class="proj-grid">
+                <article class="card proj-card">
+                    <div class="proj-img-wrap">
+                        <img src="scits-login.png" alt="SCITS login screen" loading="lazy">
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span>Web App</span>
+                            <span>Authentication</span>
+                            <span>Database</span>
+                        </div>
+                        <h3>SCITS</h3>
+                        <p>Student Concern & Intervention Tracking System, a web app where authorized personnel sign in to log and follow up on student concerns and interventions.</p>
+                        <a class="btn primary" href="https://github.com/maechieee/scits" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card proj-card">
+                    <div class="proj-img-wrap">
+                        <img src="online-yearbook.jpg" alt="FCU Online Yearbook home page" loading="lazy">
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span>Web Platform</span>
+                            <span>Archive</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <h3>FCU Online Yearbook</h3>
+                        <p>A web-based yearbook that preserves and manages yearbooks so they can be visited online.</p>
+                        <a class="btn primary" href="https://github.com/maechieee/fcu-online-yearbook" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="reveal">
+            <div class="section-header">
+                <span class="eyebrow">04 / Background</span>
+                <h2>Experience and Education</h2>
+            </div>
+            <ol class="timeline">
+                <li>
+                    <div class="card timeline-card">
+                        <span class="time-badge">Work Immersion</span>
+                        <h3>Work immersion</h3>
+                        <p class="where">Provincial Disaster Risk Reduction and Management Office (PDRRMO), Roxas City</p>
+                        <p>Gained hands-on experience in a working government office.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="card timeline-card">
+                        <span class="time-badge">College</span>
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <p class="where">Filamer Christian University, Inc., Roxas City</p>
+                        <p>Currently enrolled. Coursework in programming, databases, and web development.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Credentials (Certificates, Achievements & Internship) -->
+        <section id="credentials" class="reveal">
+            <div class="section-header">
+                <span class="eyebrow">05 / Milestones</span>
+                <h2>Certificates, Achievements & Internship</h2>
+                <p class="section-note">Trainings, seminars, Basic Life Support certification (DOH Western Visayas CHD, March 11–12, 2024), and PDRRMO work immersion highlights. Click any image to enlarge.</p>
+            </div>
+
+            <div class="filter-tabs" role="tablist" aria-label="Filter credentials">
+                <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">All (10)</button>
+                <button class="tab-btn" data-filter="cert" role="tab" aria-selected="false">Certificates (5)</button>
+                <button class="tab-btn" data-filter="achv" role="tab" aria-selected="false">Achievements (2)</button>
+                <button class="tab-btn" data-filter="intern" role="tab" aria-selected="false">Internship (3)</button>
+            </div>
+
+            <div class="gallery">
+                <!-- Certificates -->
+                <figure class="shot" data-category="cert">
+                    <button class="zoom" data-src="fire.jpg" data-cap="Symposium on Fire Safety, Prevention, and Control (March 15, 2025)" aria-label="Enlarge: Symposium on Fire Safety, Prevention, and Control (March 15, 2025)">
+                        <span class="cat-pill">Certificate</span>
+                        <img src="fire.jpg" alt="Certificate: Symposium on Fire Safety, Prevention, and Control" loading="lazy">
+                    </button>
+                    <figcaption>Symposium on Fire Safety, Prevention, and Control (March 15, 2025)</figcaption>
+                </figure>
+                <figure class="shot" data-category="cert">
+                    <button class="zoom" data-src="Ai.jpg" data-cap="Self-Awareness in this Digital Age of AI (October 28, 2026)" aria-label="Enlarge: Self-Awareness in this Digital Age of AI (October 28, 2026)">
+                        <span class="cat-pill">Certificate</span>
+                        <img src="Ai.jpg" alt="Certificate: Self-Awareness in this Digital Age of AI" loading="lazy">
+                    </button>
+                    <figcaption>Self-Awareness in this Digital Age of AI (October 28, 2026)</figcaption>
+                </figure>
+                <figure class="shot" data-category="cert">
+                    <button class="zoom" data-src="family.jpg" data-cap="Family Wellness: Reconnecting the Family in a Digital World (October 28, 2026)" aria-label="Enlarge: Family Wellness: Reconnecting the Family in a Digital World (October 28, 2026)">
+                        <span class="cat-pill">Certificate</span>
+                        <img src="family.jpg" alt="Certificate: Family Wellness: Reconnecting the Family in a Digital World" loading="lazy">
+                    </button>
+                    <figcaption>Family Wellness: Reconnecting the Family in a Digital World (October 28, 2026)</figcaption>
+                </figure>
+                <figure class="shot" data-category="cert">
+                    <button class="zoom" data-src="financial.jpg" data-cap="Financial Literacy and Mental Health (October 28, 2026)" aria-label="Enlarge: Financial Literacy and Mental Health (October 28, 2026)">
+                        <span class="cat-pill">Certificate</span>
+                        <img src="financial.jpg" alt="Certificate: Financial Literacy and Mental Health" loading="lazy">
+                    </button>
+                    <figcaption>Financial Literacy and Mental Health (October 28, 2026)</figcaption>
+                </figure>
+                <figure class="shot" data-category="cert">
+                    <button class="zoom" data-src="animal.jpg" data-cap="Animal Psychology (October 28, 2026)" aria-label="Enlarge: Animal Psychology (October 28, 2026)">
+                        <span class="cat-pill">Certificate</span>
+                        <img src="animal.jpg" alt="Certificate: Animal Psychology" loading="lazy">
+                    </button>
+                    <figcaption>Animal Psychology (October 28, 2026)</figcaption>
+                </figure>
+
+                <!-- Achievements -->
+                <figure class="shot" data-category="achv">
+                    <button class="zoom" data-src="basic.jpg" data-cap="Certificate of Completion: Basic Life Support Training — DOH Western Visayas CHD at PDRRMU, Roxas City (March 11–12, 2024)" aria-label="Enlarge: Certificate of Completion: Basic Life Support Training (March 2024)">
+                        <span class="cat-pill">Achievement</span>
+                        <img src="basic.jfif" alt="Basic Life Support Training certificate" loading="lazy">
+                    </button>
+                    <figcaption>Certificate of Completion: Basic Life Support Training (March 2024)</figcaption>
+                </figure>
+                <figure class="shot" data-category="achv">
+                    <button class="zoom" data-src="group.jpg" data-cap="Group photo with trainers and participants at the Basic Life Support Training (March 2024)" aria-label="Enlarge: Group photo with trainers and participants at the training">
+                        <span class="cat-pill">Achievement</span>
+                        <img src="group.jpg" alt="Group photo of the Basic Life Support training" loading="lazy">
+                    </button>
+                    <figcaption>Group photo with trainers and participants at the training</figcaption>
+                </figure>
+
+                <!-- Internship -->
+                <figure class="shot" data-category="intern">
+                    <button class="zoom" data-src="goods.jpg" data-cap="Packing relief goods with fellow students at PDRRMO Roxas City" aria-label="Enlarge: Packing relief goods with fellow students">
+                        <span class="cat-pill">Internship</span>
+                        <img src="goods.jpg" alt="Packing relief goods with fellow students" loading="lazy">
+                    </button>
+                    <figcaption>Packing relief goods with fellow students</figcaption>
+                </figure>
+                <figure class="shot" data-category="intern">
+                    <button class="zoom" data-src="desk.jpg" data-cap="Helping at the registration desk at PDRRMO Roxas City" aria-label="Enlarge: Helping at the registration desk">
+                        <span class="cat-pill">Internship</span>
+                        <img src="desk.jpg" alt="Helping at the registration desk" loading="lazy">
+                    </button>
+                    <figcaption>Helping at the registration desk</figcaption>
+                </figure>
+                <figure class="shot" data-category="intern">
+                    <button class="zoom" data-src="students.jpg" data-cap="With fellow work immersion students at PDRRMO Roxas City" aria-label="Enlarge: With fellow work immersion students">
+                        <span class="cat-pill">Internship</span>
+                        <img src="students.jpg" alt="With fellow work immersion students" loading="lazy">
+                    </button>
+                    <figcaption>With fellow work immersion students</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Application letter and resume -->
+        <section id="resume" class="reveal">
+            <div class="section-header">
+                <span class="eyebrow">06 / Documents</span>
+                <h2>Application letter and resume</h2>
+                <p class="section-note">Open my documents on Google Drive. You can view or download them from there.</p>
+            </div>
+            <div class="resume-grid">
+                <article class="card resume-card">
+                    <div class="doc-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                    <h3>Application letter</h3>
+                    <p>My letter for the Web Developer position.</p>
+                    <div class="cta">
+                        <a class="btn primary" href="https://drive.google.com/drive/folders/1uyrUklwZReytb69eJO3jP6RAuGK3D30j?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> View application letter
+                        </a>
+                    </div>
+                </article>
+                <article class="card resume-card">
+                    <div class="doc-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <h3>Resume</h3>
+                    <p>My education, work immersion, skills, and projects.</p>
+                    <div class="cta">
+                        <a class="btn primary" href="https://drive.google.com/drive/folders/1yfFTA6RsNHzuAP1WjVZTsA2UoyLHdtvM?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> View resume
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="reveal">
+            <div class="card contact-box">
+                <p class="section-note">Feel free to reach out for web development roles, internships, or project collaborations.</p>
+                <div class="contact-row">
+                    <a class="btn primary" href="mailto:emmanuelsetosta25@gmail.com"><i class="fa-solid fa-envelope"></i> Email me</a>
+                    <a class="btn" href="https://www.linkedin.com/in/emmanuel-setosta-450161427/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a class="btn" href="https://github.com/setosta25" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> Emmanuel Setosta. Roxas City, Capiz, Philippines.</p>
+    </footer>
+
+    <div id="lightbox" hidden>
+        <button class="lb-close" aria-label="Close">×</button>
+        <img src="" alt="">
+        <p></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
